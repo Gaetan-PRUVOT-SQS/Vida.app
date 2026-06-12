@@ -18,7 +18,7 @@ Le site présente l'application et propose le téléchargement direct de l'APK.
 ├── robots.txt                      # Indexation (APK exclu)
 ├── sitemap.xml                     # Plan du site
 ├── site.webmanifest                # Manifeste PWA
-├── _headers                        # En-têtes HTTP (Netlify / Cloudflare Pages)
+├── _headers                        # En-têtes HTTP (sécurité, cache, MIME)
 ├── assets/
 │   ├── css/style.css               # Styles
 │   ├── js/script.js                # Interactions (menu mobile…)
@@ -46,13 +46,12 @@ python3 -m http.server 8000
 
 ## Déploiement
 
-Hébergement statique sur **Cloudflare Pages** ou **Netlify**. Le fichier `_headers` configure :
+Le site est entièrement statique : il suffit de publier le contenu du dépôt à la racine
+du domaine. Le fichier `_headers` décrit les en-têtes HTTP souhaités :
 
 - les en-têtes de sécurité (CSP, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`…) ;
 - le cache long et immuable des polices et des images ;
 - le type MIME et le téléchargement forcé de l'APK.
-
-Le déploiement se fait automatiquement à chaque `push` sur la branche `main`.
 
 ## Application
 
