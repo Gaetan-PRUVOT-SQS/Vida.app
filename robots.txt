@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /vida-v1.0.1.apk
+Disallow: /download/vida-v1.0.1.apk
 
 Sitemap: https://vidapma.fr/sitemap.xml
