@@ -1,0 +1,22 @@
+# En-têtes pour Netlify / Cloudflare Pages
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+# Polices : immuables, cache long
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Icônes / images
+/*.png
+  Cache-Control: public, max-age=2592000
+
+# APK : type MIME correct + téléchargement forcé
+/vida-v1.0.1.apk
+  Content-Type: application/vnd.android.package-archive
+  Content-Disposition: attachment; filename="vida-v1.0.1.apk"
+  Cache-Control: public, max-age=86400
