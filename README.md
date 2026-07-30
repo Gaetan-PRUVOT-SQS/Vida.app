@@ -68,6 +68,4 @@ du domaine. Le fichier `_headers` décrit les en-têtes HTTP souhaités :
 Distribué sous licence **GNU Affero General Public License (AGPL)**.
 Voir le fichier [LICENSE](LICENSE).
 
----
-
 © 2026 SigmaQuantSystems
