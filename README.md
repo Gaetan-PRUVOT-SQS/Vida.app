@@ -1,71 +1,79 @@
-# Vida — Site vitrine ([vidapma.fr](https://vidapma.fr))
+# Vida — Site vitrine
 
-Site vitrine statique de **Vida**, l'application Android de suivi de cycle menstruel et
-d'accompagnement des parcours PMA, en toute confidentialité (données stockées localement,
-aucune connexion requise).
+[Français](#français) · [English](#english)
 
-Le site présente l'application et propose le téléchargement direct de l'APK.
+Site vitrine de **Vida** ([vidapma.fr](https://vidapma.fr)) — suivi de cycle et parcours PMA.
 
-## Structure
+Product website for **Vida** ([vidapma.fr](https://vidapma.fr)) — cycle tracking and fertility care.
+
+---
+
+## Français
+
+### Présentation
+
+Site vitrine **statique** de Vida, l’application Android de suivi de cycle menstruel et d’accompagnement des parcours PMA, en confidentialité (données locales, pas de connexion requise pour l’app).
+
+Le site présente l’application et propose le téléchargement de l’APK.
+
+### Structure
 
 ```
 .
-├── index.html                      # Page d'accueil
-├── cgu.html                        # Conditions générales d'utilisation
-├── mentions-legales.html           # Mentions légales
-├── politique-confidentialite.html  # Politique de confidentialité
-├── 404.html                        # Page d'erreur
-├── robots.txt                      # Indexation (APK exclu)
-├── sitemap.xml                     # Plan du site
-├── site.webmanifest                # Manifeste PWA
-├── _headers                        # En-têtes HTTP (sécurité, cache, MIME)
-├── assets/
-│   ├── css/style.css               # Styles
-│   ├── js/script.js                # Interactions (menu mobile…)
-│   ├── fonts/                       # DM Sans + Pacifico (.woff2)
-│   └── img/                         # Logo, icônes, favicons, image Open Graph
-└── download/
-    └── vida-v1.0.1.apk             # Application Android (installation directe)
+├── index.html
+├── cgu.html
+├── mentions-legales.html
+├── politique-confidentialite.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── site.webmanifest
+└── ...
 ```
 
-Toutes les références aux ressources utilisent des **chemins racine-absolus** (`/assets/…`),
-ce qui garantit un chargement correct depuis n'importe quelle page, y compris la `404.html`.
-
-## Développement local
-
-Aucune dépendance ni étape de build : c'est du HTML/CSS/JS statique. Servez simplement le
-dossier à la racine via un serveur local, par exemple :
+### Lancer en local
 
 ```bash
-python3 -m http.server 8000
-# puis ouvrir http://localhost:8000
+# ouvrir index.html, ou
+npx serve .
 ```
 
-> Servir depuis la racine est nécessaire pour que les chemins absolus (`/assets/…`,
-> `/download/…`) se résolvent correctement.
+### Live
 
-## Déploiement
+**https://vidapma.fr**
 
-Le site est entièrement statique : il suffit de publier le contenu du dépôt à la racine
-du domaine. Le fichier `_headers` décrit les en-têtes HTTP souhaités :
+---
 
-- les en-têtes de sécurité (CSP, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`…) ;
-- le cache long et immuable des polices et des images ;
-- le type MIME et le téléchargement forcé de l'APK.
+## English
 
-## Application
+### Overview
 
-- **Plateforme** : Android (installation directe via APK)
-- **Version** : 1.0.1
-- **SHA-256 de l'APK** : `d036f3e3f50f87bd57c8726300efd8c4f6719a1f3f657c17fd76dddf3a5629ff`
+**Static** product site for Vida, the Android app for menstrual cycle tracking and fertility-care journeys, with privacy in mind (local data; the app does not require a connection).
 
-> **Avertissement** — Vida est un outil de suivi à but informatif. Ce n'est pas un dispositif
-> médical : les prévisions de cycle et de fertilité sont indicatives, ne remplacent pas un avis
-> médical et ne constituent pas une méthode de contraception ou de conception.
+The site presents the product and offers APK download.
 
-## Licence
+### Structure
 
-Distribué sous licence **GNU Affero General Public License (AGPL)**.
-Voir le fichier [LICENSE](LICENSE).
+```
+.
+├── index.html
+├── cgu.html                      # Terms of use (FR)
+├── mentions-legales.html         # Legal notice (FR)
+├── politique-confidentialite.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── site.webmanifest
+└── ...
+```
 
-© 2026 SigmaQuantSystems
+### Run locally
+
+```bash
+# open index.html, or
+npx serve .
+```
+
+### Live
+
+**https://vidapma.fr**
