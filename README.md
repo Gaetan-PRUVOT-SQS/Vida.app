@@ -1,10 +1,10 @@
-# Vida — Site vitrine
+# Vida, site vitrine
 
 [Français](#français) · [English](#english)
 
-Site vitrine de **Vida** ([vidapma.fr](https://vidapma.fr)) — suivi de cycle et parcours PMA.
+Site vitrine de **Vida** ([vidapma.fr](https://vidapma.fr)) : suivi de cycle et parcours PMA.
 
-Product website for **Vida** ([vidapma.fr](https://vidapma.fr)) — cycle tracking and fertility care.
+Product website for **Vida** ([vidapma.fr](https://vidapma.fr)): cycle tracking and fertility care.
 
 ---
 
