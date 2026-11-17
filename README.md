@@ -1,58 +1,16 @@
-# Vida, site vitrine
+# Vida, product site
 
-[Français](#français) · [English](#english)
-
-Site vitrine de **Vida** ([vidapma.fr](https://vidapma.fr)) : suivi de cycle et parcours PMA.
+English · [Français](README.fr.md)
 
 Product website for **Vida** ([vidapma.fr](https://vidapma.fr)): cycle tracking and fertility care.
 
----
-
-## Français
-
-### Présentation
-
-Site vitrine **statique** de Vida, l’application Android de suivi de cycle menstruel et d’accompagnement des parcours PMA, en confidentialité (données locales, pas de connexion requise pour l’app).
-
-Le site présente l’application et propose le téléchargement de l’APK.
-
-### Structure
-
-```
-.
-├── index.html
-├── cgu.html
-├── mentions-legales.html
-├── politique-confidentialite.html
-├── 404.html
-├── robots.txt
-├── sitemap.xml
-├── site.webmanifest
-└── ...
-```
-
-### Lancer en local
-
-```bash
-# ouvrir index.html, ou
-npx serve .
-```
-
-### Live
-
-**https://vidapma.fr**
-
----
-
-## English
-
-### Overview
+## Overview
 
 **Static** product site for Vida, the Android app for menstrual cycle tracking and fertility-care journeys, with privacy in mind (local data; the app does not require a connection).
 
 The site presents the product and offers APK download.
 
-### Structure
+## Structure
 
 ```
 .
@@ -67,13 +25,13 @@ The site presents the product and offers APK download.
 └── ...
 ```
 
-### Run locally
+## Run locally
 
 ```bash
 # open index.html, or
 npx serve .
 ```
 
-### Live
+## Live
 
 **https://vidapma.fr**
